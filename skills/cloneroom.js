@@ -8,7 +8,7 @@ module.exports = function (controller) {
             var constants = require('./constants');
             var CiscoSpark = require('node-ciscospark');
             var async = require('async');
-            var spark = new CiscoSpark(process.env.SPARK_ACCESS_TOKEN);
+            var spark = new CiscoSpark(process.env.SPARK_TOKEN);
     
             bot.startConversation(message, function (err, convo) {
                 var question = "What name do you want for the new room?";
